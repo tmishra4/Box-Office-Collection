@@ -1,0 +1,38 @@
+---
+title: "Box office Collection Data Wrangling"
+author: "Tapas Mishra"
+date: "28/05/2019"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r echo=FALSE}
+library(tidyverse)
+library(ggplot2)
+library(dplyr)
+```
+
+
+
+
+```{r}
+trainingFile <- file.choose()
+testFile <- file.choose()
+traindata.df  <- read.csv(trainingFile,header=TRUE)
+testdata.df  <- read.csv(testFile,header=TRUE)
+dim(traindata.df)
+dim(testdata.df)
+glimpse(traindata.df)
+glimpse(testdata.df)
+```
+Looks like dataset is too messy. Most of variables contains messy data. We will have to tidy this up.
+Combining both the dataset , so that the transformation can be applied to both dataset and later me can separate them out for further analysis.
+
+```{r}
+
+```
+
